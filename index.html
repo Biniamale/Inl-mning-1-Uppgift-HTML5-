@@ -70,11 +70,16 @@
         color: white;
         border: 0;
       }
-      
-      checkbox{
-        display: flex;
-        justify-content: space-between;
-      }
+
+    .checkboxes{
+      display: flex;
+      justify-content: center;
+      margin-right: 400px;
+
+}
+
+
+
 
     </style>
 
@@ -132,7 +137,7 @@
                   <li>Böcker</li>
               </ul>
               
-                <h1>Registration Form</h1>
+                <h1 class="register">Registration Form</h1>
                 <form method="POST" action="https://formshow.systementor.se">
                   <fieldset>
                     <legend>Register</legend>
@@ -152,12 +157,14 @@
                         <textarea name="name"></textarea>
                         <br><br>
 
+                        <div class="checkboxes">
                         <label>Interests</label><br>
                         <input  type="checkbox" name="interests" value="Movies" /> Movies
                         <input  type="checkbox" name="interests"  value="Music" /> Music
                         <input  type="checkbox" name="interests"  value="Sports" /> Sports
                         <input  type="checkbox" name="interests"  value="Art" /> Art
                           <br><br>
+                        </div>
                       </fieldset>
                       <br>
                       <button type="submit">Submit</button>
